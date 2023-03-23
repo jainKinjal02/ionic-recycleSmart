@@ -1,0 +1,21 @@
+ion-avatar , ion-label{
+    margin: 10px;
+}
+
+img{
+    height: 45px;
+    width: 50px;
+}
+ion-list{
+   padding: 0;
+   box-shadow : 0 1px 2px 1px rgb(0 0 0 / 20%); 
+   .money{
+    font-weight: bold;
+   }
+}
+
+ion-card-subtitle{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+

@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>RecycleSmart</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list color="primary">
+  <ion-item color="primary">
+    <ion-avatar>
+      <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50" />
+    </ion-avatar>
+    <ion-label>
+      <h1>John C</h1>
+      <p>Gathered:<span class="money"> Rs 15,000</span></p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+  <app-pickup-call-card status="hold" updateAt = "25/04/2023 16:29" createdAt="24/04/2023 12:05" notes=" We have two bags that are full, one with plastic and the other one with glass">
+        <ion-card-header header> <!--this will be displayed in ng-content dynamically in pickup-call-card component if its header in select-->
+          <ion-card-subtitle>Last pickup call
+          </ion-card-subtitle>
+        </ion-card-header>
+        <ion-button color="primary" size="full" fill="clear" footer (click)="OnClickSeeAll()">See all..</ion-button><!--this will be displayed in ng-content dynamically in pickup-call-card component if its footer in select-->
+</app-pickup-call-card>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button color="primary" (click)="OnAddNewPickupCall()">
+    <ion-icon name="add"></ion-icon>
+</ion-fab-button>
+</ion-fab>
+      
+
+</ion-content>
