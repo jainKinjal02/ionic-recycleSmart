@@ -1,6 +1,11 @@
 {
-	"appId": "io.ionic.starter",
-	"appName": "Ion",
-	"webDir": "www",
-	"bundledWebRuntime": false
+  "appId": "io.ionic.starter",
+  "appName": "Ion",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "LocalNotifications": {
+      "iconColor": "#488AFF"
+    }
+  }
 }
