@@ -27,8 +27,8 @@ export class PickupCallPage implements OnInit {
     const notifs = await LocalNotifications.schedule({
       notifications :[
         {
-          title: "Ionic app",
-          body: "checking local notification",
+          title: "recycleSmart",
+          body: "Pickup call created successfully",
           id: 1,
           schedule: {at: new Date(Date.now() + 1000*5 )},
           //sound: 'sound.wav',
