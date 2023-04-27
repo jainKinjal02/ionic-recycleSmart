@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Contacts } from '@capacitor-community/contacts';
 import { Capacitor } from '@capacitor/core';
+import { CallNumber } from '@awesome-cordova-plugins/call-number/ngx';
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.page.html',
@@ -8,7 +9,7 @@ import { Capacitor } from '@capacitor/core';
 })
 export class ContactsPage implements OnInit {
   contacts:any[] =[];
-  constructor() { }
+  constructor(private callNumber : CallNumber) { }
 
   ngOnInit() {
     this.accessContacts();
@@ -45,6 +46,15 @@ export class ContactsPage implements OnInit {
   }
   call(contact){
     console.log(contact);
+      if(!this.checkPlatformForWeb()){
+      let phoneNumber = contact.phones[0].number;
+      this.callNumber.callNumber(phoneNumber,true)
+      .then(res=> console.log('dialer launched' , res))
+      .catch(err => console.log('error lauching dialer', err))
+
+    }else{
+      console.log('cannot call in web');
+    }
   }
 
 }
