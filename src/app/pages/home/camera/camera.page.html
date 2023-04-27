@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>My Photos</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="text-align: center; margin:20px;">
+  <ion-button color="warning" shape="round"  footer (click)="OnAddPhoto()">Add Photo</ion-button>
+  </div>
+  <ion-card >
+    <img *ngIf="selectImage" [src]="selectImage?.webPath">
+  </ion-card>
+
+</ion-content>
