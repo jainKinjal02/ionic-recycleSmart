@@ -27,6 +27,8 @@
         </ion-card-header>
         <ion-button color="primary" size="full" fill="clear" footer (click)="OnClickSeeAll()">See all..</ion-button><!--this will be displayed in ng-content dynamically in pickup-call-card component if its footer in select-->
 </app-pickup-call-card>
+<ion-button color="primary" size="full"  footer (click)="OnAddPhoto()">Add Photo</ion-button>
+<img *ngIf="selectImage" [src]="selectImage?.webPath">
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button color="primary" (click)="OnAddNewPickupCall()">
     <ion-icon name="add"></ion-icon>
