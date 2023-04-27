@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Share } from '@capacitor/share';
 
 @Component({
   selector: 'app-home',
@@ -20,6 +21,15 @@ export class HomePage implements OnInit {
 
   OnAddNewPickupCall(){
     this.router.navigate(['pickup-call']);
+  }
+
+  async share(){
+    await Share.share({
+      title: 'Share via recycleSmart',
+      text: 'Details regarding recycledd products will be sent',
+      url: 'http://ionicframework.com/',
+      dialogTitle: 'Share with friends',
+    });
   }
 
  

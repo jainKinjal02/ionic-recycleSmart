@@ -33,6 +33,9 @@
 <ion-card>
 <ion-button color="primary" size="full" fill="clear"  footer routerLink="/home/contacts">Get Contacts</ion-button>
 </ion-card>
+<ion-card>
+  <ion-button color="primary" size="full" fill="clear"  footer (click)="share()">Share</ion-button>
+</ion-card>
 
 <ion-fab vertical="bottom" horizontal="end" slot="fixed">
   <ion-fab-button color="primary" (click)="OnAddNewPickupCall()">
