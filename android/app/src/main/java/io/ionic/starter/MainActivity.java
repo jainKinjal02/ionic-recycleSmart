@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.kinjal.recyleSmart;
 
 import com.getcapacitor.BridgeActivity;
 
