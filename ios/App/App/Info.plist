@@ -4,6 +4,14 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSCameraUsageDescription</key>
+	<string>access camera photos</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>access camera photos from gallery</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>access camera photos for usage</string>
+	<key>NSContactsUsageDescription</key>
+	<string>need to access phone contacts</string>
 	<key>CFBundleDisplayName</key>
         <string>Ion</string>
 	<key>CFBundleExecutable</key>
