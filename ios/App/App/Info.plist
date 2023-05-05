@@ -17,7 +17,7 @@
 	<key>NSContactsUsageDescription</key>
 	<string>need to access phone contacts</string>
 	<key>CFBundleDisplayName</key>
-        <string>Ion</string>
+        <string>recycleSmart</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

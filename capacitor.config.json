@@ -1,6 +1,6 @@
 {
   "appId": "com.kinjal.recyleSmart",
-  "appName": "Ion",
+  "appName": "recycleSmart",
   "webDir": "www",
   "bundledWebRuntime": false,
   "plugins": {
