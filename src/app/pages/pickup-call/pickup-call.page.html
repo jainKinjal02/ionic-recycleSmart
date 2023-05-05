@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="primary">
     <ion-buttons slot="start">
-    <ion-back-button text=""></ion-back-button>
+      <ion-back-button text="" defaultHref="/home"></ion-back-button>
     </ion-buttons>
     <ion-title>Pickup Call</ion-title>
   </ion-toolbar>
@@ -10,6 +10,9 @@
 <ion-content>
   <img src="assets/images/HILmr.png">
 <ion-card>
+  <ion-card-header>
+    <ion-button size="full" color="primary" routerLink="/pickup-call/location" (click)="selectLocation()">Get Current Location</ion-button>
+  </ion-card-header>
   <ion-card-content>
   <p>address: fake street , 111</p>
   <p>Complement: Apto 222</p>

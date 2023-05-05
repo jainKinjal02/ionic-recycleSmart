@@ -4,6 +4,10 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Location acess</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Location Usage needed</string>
 	<key>NSCameraUsageDescription</key>
 	<string>access camera photos</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>

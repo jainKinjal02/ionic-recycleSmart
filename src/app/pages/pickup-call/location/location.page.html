@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Location</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button text="" defaultHref="/pickup-call"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+  <ion-card-header class="location-header"><p>Current Location :</p></ion-card-header>
+  <ion-card-content>
+    <ion-spinner *ngIf="!coordinates"></ion-spinner>
+    <p *ngIf ="coordinates">The latitude is {{coordinates.coords.latitude}}</p>
+    <p *ngIf ="coordinates">The longitude is {{coordinates.coords.longitude}}</p>
+
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

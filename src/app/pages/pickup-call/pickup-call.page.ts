@@ -45,4 +45,9 @@ export class PickupCallPage implements OnInit {
     this.router.navigate(['home']);
   }
 
+  selectLocation(){
+    console.log('select location');
+    
+  }
+
 }
